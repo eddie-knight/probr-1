@@ -3,15 +3,17 @@ InstallDir:
 WriteDirectory:
 Verbose:
 AllPacks:
+LogLevel: info
 Run: # must be all-lowercase
-  - "kubernetes"
+  - kubernetes
+  # - "kubernetes"
   # - "storage"
 ServicePacks:
   Kubernetes:
     TagInclusions:
       #- k-pod
     TagExclusions:
-    KubeConfig:
+    KubeConfig: poop
     KubeContext:
     AuthorisedContainerImage: citihubprod.azurecr.io/citihub/probr-probe # required
     UnauthorisedContainerImage: docker.io/citihub/probr-probe # required
